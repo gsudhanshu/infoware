@@ -42,7 +42,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ trans('register.name') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" @isset($user) value="{{ $user->name }}" @else value="{{ old('name') }}" @endisset autocomplete="name">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" @isset($user) value="{{ $user->name }}" @else value="{{ old('name') }}" @endisset autocomplete="name" required>
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -70,7 +70,7 @@
                             <label for="aadhar_card_no" class="col-md-4 col-form-label text-md-right">{{ trans('register.aadhar') }}</label>
 
                             <div class="col-md-6">
-                                <input id="aadhar_card_no" type="text" class="form-control @error('aadhar_card_no') is-invalid @enderror" name="aadhar_card_no" @isset($user) value="{{ $user->aadhar_card_no }}" @else value="{{ old('aadhar_card_no') }}" @endisset>
+                                <input id="aadhar_card_no" type="text" class="form-control @error('aadhar_card_no') is-invalid @enderror" name="aadhar_card_no" @isset($user) value="{{ $user->aadhar_card_no }}" @else value="{{ old('aadhar_card_no') }}" @endisset required>
 
                                 @error('aadhar_card_no')
                                     <span class="invalid-feedback" role="alert">
@@ -100,7 +100,7 @@
                             <label for="village" class="col-md-4 col-form-label text-md-right">{{ trans('register.Village') }}</label>
 
                             <div class="col-md-6">
-                                <input id="village" type="text" class="form-control @error('village') is-invalid @enderror" name="village" @isset($user) value="{{ $user->address_village }}" @else value="{{ old('village') }}" @endisset >
+                                <input id="village" type="text" class="form-control @error('village') is-invalid @enderror" name="village" @isset($user) value="{{ $user->address_village }}" @else value="{{ old('village') }}" @endisset required>
 
                                 @error('village')
                                     <span class="invalid-feedback" role="alert">
@@ -114,7 +114,7 @@
                             <label for="taluka" class="col-md-4 col-form-label text-md-right">{{ trans('register.Taluka') }}</label>
 
                             <div class="col-md-6">
-                                <input id="taluka" type="text" class="form-control @error('taluka') is-invalid @enderror" name="taluka" @isset($user) value="{{ $user->address_taluka }}" @else value="{{ old('taluka') }}" @endisset>
+                                <input id="taluka" type="text" class="form-control @error('taluka') is-invalid @enderror" name="taluka" @isset($user) value="{{ $user->address_taluka }}" @else value="{{ old('taluka') }}" @endisset required>
 
                                 @error('taluka')
                                     <span class="invalid-feedback" role="alert">
@@ -189,7 +189,7 @@
                             <label for="mobile" class="col-md-4 col-form-label text-md-right">{{ trans('register.mobile') }}</label>
 
                             <div class="col-md-6">
-                                <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" @isset($user) value="{{ $user->mob_no }}" @else value="{{ old('mobile') }}" @endisset>
+                                <input id="mobile" type="text" class="form-control @error('mobile') is-invalid @enderror" name="mobile" @isset($user) value="{{ $user->mob_no }}" @else value="{{ old('mobile') }}" @endisset required>
 
                                 @error('mobile')
                                     <span class="invalid-feedback" role="alert">
@@ -231,7 +231,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ trans('register.email') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" @isset($user) value="{{ $user->email }}" @else value="{{ old('email') }}" @endisset required autocomplete="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" @isset($user) value="{{ $user->email }}" @else value="{{ old('email') }}" @endisset autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
